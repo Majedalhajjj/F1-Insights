@@ -1,0 +1,248 @@
+/* General Styles */
+@font-face {
+  font-family: 'F1 Turbo';
+  src: url('Formula1-Bold_web_0.ttf') format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'F1 Turbo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+header {
+  position: sticky; /* Keeps it in place */
+  top: 0; /* Makes it stick to the top */
+  z-index: 2000; /* Keeps it above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #202020;
+  border-bottom: 2px solid #b00000;
+  transition: transform 0.3s ease; /* Smooth scrolling effect */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  padding: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bolder;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s; /* Add transition for transform */
+  display: inline-block;
+  padding: 5px 10px; /* Keep the padding consistent */
+  box-sizing: border-box;
+}
+
+nav ul li a:hover {
+  color: #e10600;
+  background-color: #303030;
+  transform: scale(1.1); /* Use scale to enlarge the button without affecting the layout */
+  border-radius: 5px;
+}
+
+/* History Page Styles */
+/* History Page - F1 Introduction Styles */
+#intro-f1 {
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+#intro-f1 .intro-text {
+  max-width: 8000px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+#intro-f1 h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #e10600;
+  font-weight: bold;
+}
+
+#intro-f1 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+#intro-f1 p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Styling for the image */
+#intro-f1 .intro-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#intro-f1 .intro-image img {
+  width: 90%;  /* Make the image take up 90% of the page width */
+  max-width: 1000px;  /* Maximum size limit */
+  height: auto;
+  border-radius: 15px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for the image */
+}
+
+
+/* History Page - Start of F1 Styles */
+#start-of-f1 {
+
+  margin: 0; /* Remove centering margin */
+  padding-left: 40px; /* Add padding from the left */
+  background-color: #202020;
+  padding: 50px;
+}
+
+
+#start-of-f1 .start-text {
+  max-width: 8000px;
+  margin: 0 auto;
+}
+
+#start-of-f1 h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #e10600;
+  font-weight: bold;
+}
+
+#start-of-f1 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+#start-of-f1 p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* F1 Successful Drivers Section */
+#f1-successful-drivers {
+  padding: 40px;
+  background-color: #121212;
+  color: #f1f1f1;
+  padding-left: 40px;
+}
+
+#f1-successful-drivers .section-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #e10600;
+  text-align: le;
+  font-weight: bold;
+}
+
+#f1-successful-drivers .drivers-info p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+ 
+}
+
+#f1-successful-drivers .drivers-info p:last-of-type {
+  margin-bottom: 0;
+}
+#f1-successful-drivers .drivers-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#f1-successful-drivers .drivers-image img {
+  width: 90%;  /* Make the image take up 90% of the page width */
+  max-width: 1000px;  /* Maximum size limit */
+  height: auto;
+  border-radius: 15px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for the image */
+}
+
+/* F1 Successful Drivers Table Section */
+#f1-successful-drivers-table {
+  padding: 50px 20px;
+  background-color: #202020;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.best-h2 h2 {
+  font-family: 'F1 Turbo', sans-serif;
+  color: #e10600;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.best-table {
+  overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+}
+
+#best-drivers {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#best-drivers th, #best-drivers td {
+  padding: 12px 20px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+#best-drivers th {
+  background-color: #202020;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+}
+
+#best-drivers td {
+  background-color: #181818;
+  color: #f1f1f1;
+  font-size: 1rem;
+}
+
+#best-drivers tr:nth-child(even) {
+  background-color: #202020;
+}
+
+
+#best-drivers td, #best-drivers th {
+  border-radius: 5px;
+}
+
+#best-drivers td {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+  #best-drivers th, #best-drivers td {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .best-h2 h2 {
+    font-size: 1.5rem;
+  }
+}
+

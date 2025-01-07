@@ -1,0 +1,377 @@
+/* General Styles */
+@font-face {
+  font-family: 'F1 Turbo';
+  src: url('Formula1-Bold_web_0.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'F1 Turbo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #202020;
+  border-bottom: 2px solid #b00000;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  padding: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bolder;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+nav ul li a:hover {
+  color: #e10600;
+  background-color: #303030;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+/* First Section */
+.first-section {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.first-section h1 {
+  font-family: 'F1 Turbo', sans-serif;
+  font-size: 3rem;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+.first-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.car-image img {
+  width: 90%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Tires Section */
+.tires-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tires-section h2 {
+  font-size: 2.5rem;
+  color: #e10600;
+  margin-bottom: 10px;
+}
+
+.tires-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tires-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.tire-card {
+  background-color: #303030;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #f1f1f1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 120px;
+}
+
+.tire-card:hover {
+  transform: scale(1.1);
+  background-color: #404040;
+}
+
+.tire-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.tire-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Tire Details Flexbox */
+.tire-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+
+/* Text Section */
+.tire-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.tire-text h3 {
+  font-size: 2rem;
+  color: #e10600;
+  margin-bottom: 10px;
+}
+
+.tire-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+  
+}
+
+/* Photo Section */
+.tire-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.tire-photo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Alternating Layout for Left/Right */
+#soft-tire .tire-details .tire-text {
+  order: 1; /* Text on left, image on right */
+}
+
+#soft-tire .tire-details .tire-photo {
+  order: 2;
+}
+
+#medium-tire .tire-details .tire-text {
+  order: 2; /* Text on right, image on left */
+}
+
+#medium-tire .tire-details .tire-photo {
+  order: 1;
+}
+
+#hard-tire .tire-details .tire-text {
+  order: 1; /* Text on left, image on right */
+}
+
+#hard-tire .tire-details .tire-photo {
+  order: 2;
+}
+
+#intermediate-tire .tire-details .tire-text {
+  order: 2; /* Text on right, image on left */
+}
+
+#intermediate-tire .tire-details .tire-photo {
+  order: 1;
+}
+
+#wet-tire .tire-details .tire-text {
+  order: 1
+}
+/* Front Wing Section */
+.front-wing-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.front-wing-section h2 {
+  font-size: 2.5rem;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+.front-wing-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.front-wing-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Text Section */
+.front-wing-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.front-wing-text h3 {
+  font-size: 2rem;
+  color: #e10600;
+  margin-bottom: 10px;
+}
+
+.front-wing-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* Photo Section */
+.front-wing-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.front-wing-photo img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Alternating Layout for Left/Right */
+.front-wing-details .front-wing-text {
+  order: 1; /* Text on left, image on right */
+}
+
+.front-wing-details .front-wing-photo {
+  order: 2;
+}
+
+.front-wing-details:nth-of-type(even) .front-wing-text {
+  order: 2; /* Text on right, image on left */
+}
+
+.front-wing-details:nth-of-type(even) .front-wing-photo {
+  order: 1;
+}
+/* Halo Section */
+.halo-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #202020;
+}
+
+.halo-section h2 {
+  font-size: 2.5rem;
+  color: #e10600;
+  margin-bottom: 20px;
+}
+
+.halo-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.halo-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Text Section */
+.halo-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.halo-text h3 {
+  font-size: 2rem;
+  color: #e10600;
+  margin-bottom: 10px;
+}
+
+.halo-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+/* Photo Section */
+.halo-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.halo-photo img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Alternating Layout for Left/Right */
+.halo-details .halo-text {
+  order: 1; /* Text on left, image on right */
+}
+
+.halo-details .halo-photo {
+  order: 2;
+}
+
+.halo-details:nth-of-type(even) .halo-text {
+  order: 2; /* Text on right, image on left */
+}
+
+.halo-details:nth-of-type(even) .halo-photo {
+  order: 1;
+}

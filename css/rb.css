@@ -1,0 +1,176 @@
+/* General Styles */
+@font-face {
+  font-family: 'F1 Turbo';
+  src: url('Formula1-Bold_web_0.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'F1 Turbo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #202020;
+  border-bottom: 2px solid #2902c7;
+  transition: transform 0.3s ease;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  padding: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: bolder;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #2902c7;
+  background-color: #303030;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+.visa-cash-app-rb-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 0;
+  background-color: #121212;
+}
+
+.visa-cash-app-rb-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.visa-cash-app-rb-logo img {
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.visa-cash-app-rb-info {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.team-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 1px;
+}
+
+.team-detail h2 {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #2902c7;
+  flex: 3;
+  text-align: left;
+}
+
+.team-detail p {
+  font-size: 22px;
+  flex: 3;
+  text-align: left;
+}
+
+.drivers-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.driver {
+  text-align: center;
+  flex: 1;
+}
+
+.driver img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.driver-info p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #f1f1f1;
+}
+
+.photo-gallery {
+  position: absolute;
+  bottom: -550px;
+  right: 50px;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-image:first-child {
+  opacity: 1;
+}
